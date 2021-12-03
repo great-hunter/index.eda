@@ -94,7 +94,24 @@ body {
 }
 .slide-content {
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
+  min-height: 240px;
+}
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.slider-button {
+  cursor: pointer;
+}
+.swiper {
+  position: relative;
 }
 .slide-title {
   margin-top: 0;
@@ -130,6 +147,16 @@ body {
 }
 .slite-summer {
   background-image: url('../img/summer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slite-vitamin {
+  background-image: url('../img/vitamin.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slite-autumn {
+  background-image: url('../img/autumn.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -388,8 +415,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: -18px;
 }
 .advantages-card {
+  margin: 18px;
   overflow: hidden;
   max-width: 270px;
   height: 296px;
@@ -453,4 +482,186 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+@media (max-width: 1260px) {
+  .container{
+    max-width: 960px;
+  }
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 36px);
+  }
+  .advantages-cards {
+    flex-wrap: wrap;
+  }
+  .advantages-card {
+    max-width: calc(50% - 36px);
+  }
+}
+@media (max-width: 1020px) {
+  .container {
+    max-width: 750px;
+  }
+  .slide {
+    padding: 60px;
+  }
+  .delivery-card {
+    width: calc(50% - 36px);
+  }
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+  .footer-logo {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 810px) {
+  .container {
+    max-width: 560px;
+  }
+  .header {
+    flex-wrap: wrap;
+  }
+  .search-form {
+    order: 5;
+    margin-left: 0;
+    margin-right: 0;
+    flex: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .promo {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 620px) {
+  .container {
+    max-width: 90%;
+  }
+  .tabs-card {
+    max-width: 100%;
+  }
+  .delivery-card {
+    max-width: 100%;
+    width: 100%;
+  }
+  .advantages-card {
+    margin: -10px;
+  }
+  .advantages-card {
+    margin: 10px;
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+  }
+  .advantages-title {
+    margin-top: 10px;
+  }
+  /* .slider-buttons {
+    display: none;
+  } */
+  .slide-title {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  .slide-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .slide-content {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .promo {
+    margin: 0;
+  }
+  .card {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .delivery-week {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .delivery-cards {
+    margin: 0;
+  }
+  .delivery-card {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    margin-bottom: 35px;
+  }
+  .tabs {
+    margin-bottom: 35px;
+  }
+  .tabs-content {
+    margin: 0;
+  }
+  .tabs-card {
+    margin: 0;
+    margin-bottom: 20px;
+    flex: 100%;
+    max-height: 400px;
+  }
+  .tabs-image {
+    max-width: 50%;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  .advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .advantages-cards {
+    margin: 0;
+  }
+  .advantages-card {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .footer {
+    max-width: 100%;
+  }
+  .footer-wrapper {
+    margin: auto;
+    max-width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .footer-nav {
+    margin-top: 20px;
+    order: 5;
+    flex: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-logo {
+    width: 150px;
+    margin-right: 0;
+  }
+  .footer-link {
+    margin-right: 0;
+  }
+  .social-links {
+    margin: 0;
+  }
 }
